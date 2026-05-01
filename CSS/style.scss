@@ -1,1 +1,8 @@
 @use 'partial';
+body{
+    background-color: partial.$bg_color;
+}
+
+.logo{
+    @include partial.img_størrelse(100px);
+}

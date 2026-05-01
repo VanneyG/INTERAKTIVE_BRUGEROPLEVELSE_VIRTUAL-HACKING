@@ -1,0 +1,12 @@
+$bg_color:#0F3657;
+
+
+
+
+
+
+
+@mixin img_størrelse($width,$height:auto){
+    width:$width;
+    height:$height;
+}

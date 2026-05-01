@@ -1,1 +1,8 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #0F3657;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
