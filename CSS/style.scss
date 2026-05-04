@@ -1,8 +1,167 @@
 @use 'partial';
+*{margin: 0;padding: 0;box-sizing: border-box;};
 body{
     background-color: partial.$bg_color;
+    color:partial.$txt_color;
+ min-height: 100vh;
+    width:100%;
+ 
+
+
 }
 
-.logo{
-    @include partial.img_størrelse(100px);
+
+
+ .menu{
+    @include partial.flex;
+    position: relative;
+    min-height: 120px;
+    font-size: partial.$txt_hgt;
+
+    .logo{
+    @include partial.img_størrelse($height:95px);
+    position: absolute;
+    left:5px;
+    top:20%;
+}
+
+    .links_navigation ul {
+        @include partial.flex($align:flex-start,$justify:flex-end) ;                                                                                             
+        list-style-type: none;
+        position: absolute;
+        right:25px;
+        top:30%;
+        border: solid 1px #E86992 ;
+        padding: 10px 17px;
+        border-radius: 10px;
+        
+        
+       a{
+        text-decoration: none;
+        color:partial.$txt_color;
+        padding-right: 12px;
+    
+    }  
+     
+     .intern_navigation{
+        background-color:rgb(0, 0, 128,.2);
+        opacity: 0;
+        @include partial.flex($direction:column,$align:flex-start);
+        padding-top:3px;
+        margin-top: 30px;
+        border:none;
+        left:0px;
+       li:first-of-type{
+        padding-top: 5px;
+        
+       }
+       li:last-of-type{
+        padding-bottom: 5px;
+       }
+        li{
+          padding-top: 3px;
+        }
+
+     }
+     #mom_intern_navigation:hover{
+        .intern_navigation{
+            opacity: 100%;
+
+        }
+     }
+    }
+ }
+ .banner{
+    
+    height: 370px;
+    background:url(../IMG/first_picture.jpg) no-repeat center center/cover;
+
+    h1{
+        padding-top: 7%;
+        @include partial.h1_txt;
+         -webkit-text-stroke: .5px white;
+    }
+
+    h2{
+        padding-top: 10px;
+        @include partial.h2_txt; 
+        -webkit-text-stroke: .4px white;
+    }
+
+ }
+ .first_sect{
+    @include partial.sect_margin;
+     @include partial.flex($justify:space-around,$align:center,$direction:row);
+    .image{
+        @include partial.img_størrelse($width:140px,$height:auto);
+       align-self: center;
+       
+       
+    }
+    h3{
+          @include partial.h3_txt; 
+    }
+    .txt_section{
+
+       @include partial.flex($justify:space-evenly,$align:center,$direction:column);
+       flex-basis: 70%;
+       margin-bottom: 10px;
+    }
+ }
+
+.second_sect{
+    
+     @include partial.sect_margin;
+   .txt_section{
+    
+      h3{
+          @include partial.h3_txt; 
+    }
+   p{padding-right: 10%;
+padding-left: 10%;}
+  }
+ .tre_boxes{
+     @include partial.flex($justify:space-around,$align:center,$direction:row);
+
+     .single_box{
+         @include partial.flex($justify:center,$align:center,$direction:column);
+         background-color: white;
+         color:black;
+         border-radius: 10px;
+         margin:5px;
+         padding:10px;
+         min-height: 180px;
+         
+
+         h4{
+            @include partial.h4_txt;
+         }
+         button{margin-top: 7px;
+          width:60% ;
+        height: 30px;
+    background-color:#AFBC88;
+border-radius: 5px;}
+     }
+.single_box:last-of-type{
+    margin-bottom: 10px;
+}
+
+ }
+ }
+/* the 3rd,5th section has the samme setting as the first section, therefore it was given the class:first section */
+.fourth_sect{
+    .box_inde_sect4{
+          @include partial.flex($justify:space-around,$align:center,$direction:row);
+    }
+}
+.sixth_sect{
+
+    p{ align-self: center;
+
+    }
+    h4{ 
+        @include partial.h4_txt;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
 }

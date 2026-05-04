@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Hacking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/burger_menu.js" defer></script>
     <script src="JS/forgrenet_scenarie.js" defer></script>
 </head>
 <body>
     <!-- navigation-->
-    <header>
+    <header class="menu">
       <img src="IMG/Logo con fondo negro.png" alt="lOGO" class="logo">
-      <nav>
+      <nav class="links_navigation">
         <ul>
-            <li> <a href="#"> Virtual Hacking</a> 
+            <li id="mom_intern_navigation"> <a href="#" > Virtual Hacking</a> 
                 <!-- Intern Navigation -->
-                    <ul>  
+                    <ul class="intern_navigation">  
                             <li><a href="">Virtual hacking metoder</a></li>
                             <li><a href="">Formål og konsekvenser</a></li>
                             <li><a href="">Beskyt dig</a></li>
@@ -31,36 +34,38 @@
       </nav>
     </header>
     <!-- banner-->
-     <header>
+     <header class="banner">
        <h1>Virtual hacking</h1>
        <h2>Datasikkerhed</h2>
      </header>
      <!--container-->
      <main>
         <!-- 1 Section-->
-      <section>
-        <img src="IMG/koncept_virtual hacking.jpg" alt="Billede_virtual_hacking">
-        <div>
-        <h3>Hvad er det?</h3>
-        <p>
-          virtual hacking refers to the practice of conducting cyberattacks or penetration testing within simulated, 
-          isolated environments (virtual machines) rather than on real-world systems.
-           It serves as a secure "sandbox" that allows security professionals and students to learn, test exploits,
-            and study malware without risking damage to their primary hardware, network, or data.  
-        </p>
+      <section class="first_sect">
+        
+        <img src="IMG/koncept_virtual hacking.jpg" alt="Billede_virtual_hacking" class="image">
+        
+        <div class="txt_section">
+             <h3>Hvad er det?</h3>
+              <p>
+                  virtual hacking refers to the practice of conducting cyberattacks or penetration testing within simulated, 
+                 isolated environments (virtual machines) rather than on real-world systems.
+                 It serves as a secure "sandbox" that allows security professionals and students to learn, test exploits,
+                 and study malware without risking damage to their primary hardware, network, or data.  
+             </p>
         </div>
       </section>
         <!-- 2 Section-->
-      <section>
-        <div>
+      <section class="second_sect">
+        <div class="txt_section">
             <h3>Virtual hacking  metoder</h3>
             <p> Der findes mange former for virtuel hacking,
                  der er mere tekniske eller manipulerede end shoulder surfing (at kigge over skulderen).
                   Her er en oversigt over de mest almindelige former, opdelt efter type:</p>
         </div>
              <!-- 3 kasser indenfor denne sektion-->
-        <div>
-             <div>
+        <div class="tre_boxes">
+             <div class="single_box">
                  <h4> Teknisk Hacking (Malware og systemangreb) </h4>
                  <ul>
                         <li> Phishing/Spear Phishing.</li>
@@ -72,7 +77,7 @@
                  <button> Læs mere</button>
              </div>
 
-             <div>
+             <div class="single_box">
                  <h4> Adgangskode- og netværksangreb </h4>
                   <ul>
                         <li> Malware-hacking.</li>
@@ -85,7 +90,7 @@
                  <button> Læs mere</button>
              </div>
 
-             <div>
+             <div class="single_box">
                 <h4>Social Engineering (Manipulation af mennesker)</h4>
                 <ul>
                         <li>Credential Stuffing. </li>
@@ -99,8 +104,9 @@
         </div>
       </section>
         <!-- 3 Section-->
-      <section>
-         <div>
+      <section class="first_sect">
+         <img src="IMG/formel_virtual_hacking.jpg" alt="Billede_virtual_hacking" class="image"> 
+         <div class="txt_section">
             <h3>Formål</h3>
             <p>
                Formålet med "virtual hacking" (ofte omtalt som at bruge virtuelle maskiner/labs til hacking)
@@ -109,12 +115,13 @@
             </p>
          </div>
         
-        <img src="IMG/formel_virtual_hacking.jpg" alt="Billede_virtual_hacking"> 
+       
       </section>
         <!-- 4 Section-->
-      <section>
-          <div>
-            <div>
+      <section class="first_sect fourth_sect">
+          <div class="box_inde_sect4" >
+             <img src="IMG/konsekvenser.jpg" alt="Billede_virtual_hacking" class="image">
+            <div class="txt_section">
             <h3>konsekvenser</h3>
             <p>
                Virtual hacking (hacking af virtuelle miljøer som VR/AR) og generel digital hacking
@@ -123,10 +130,10 @@
                   risici.
             </p>
             </div>
-            <img src="IMG/konsekvenser.jpg" alt="Billede_virtual_hacking">
+           
          </div>
             
-            <div>
+            <div class="txt_section">
               <ul>
                     <li> <p> Manipulation af VR-indhold og fysisk ubehag:
                         Hvis hackere overtager et VR-headset, kan de manipulere det indhold, brugeren ser.
@@ -145,8 +152,9 @@
             </div> 
       </section>
           <!-- 5 Section--> 
-      <section>
-          <div>
+      <section class="first_sect">
+         <img src="IMG/howtoknow_you_are_hacked.jpg" alt="Billede_virtual_hacking" class="image"> 
+          <div class="txt_section">
             <h3>Symptomer at være hacket</h3>
             <p>
                Tegn på hacking inkluderer, at enheder opfører sig mærkeligt (fryser, genstarter),
@@ -154,30 +162,31 @@
             </p>
          </div>
         
-        <img src="IMG/howtoknow_you_are_hacked.jpg" alt="Billede_virtual_hacking"> 
+       
       </section>
               <!-- 6 Section--> 
-      <section>
-        <div>
+      <section class="first_sect sixth_sect">
+        <div class="txt_section">
+            <img src="IMG/beskyttelse.webp" alt="Billede_virtual_hacking" class="image">
             <h3>Hvordan beskytter man sig?</h3>
             <p>At beskytte sig mod "virtual hacking"
                  (cyberangreb, phishing og datatyveri) kræver en kombination af tekniske 
                  foranstaltninger og sund fornuft. Her er de mest effektive metoder
                   baseret på ekspertråd:</p>
         </div>
-            <img src="IMG/beskyttelse.webp" alt="Billede_virtual_hacking">
-        <ol>
-            <li> <h4>Adgangskoder og Login </h4>
+            
+        <ol class="txt_section">
+            <li> <h4>Adgangskoder og Login </h4></li>
                  <p>   Brug stærke og unikke adgangskoder,Anvend en Password Manager,Aktivér 
-                    To-faktor-godkendelse (2FA/MFA). </p></li>
-            <li> <h4>Software og Enheder</h4>
+                    To-faktor-godkendelse (2FA/MFA). </p>
+            <li> <h4>Software og Enheder</h4></li>
                   <p>oftware og Enheder Opdatér alt software med det samme,Installer
-                     Antivirus/Antimalware, Brug Firewall.</p></li>
-            <li><h4>Online Adfærd og Sikkerhed</h4>
-                   <p>Vær kritisk over for links og vedhæftede filer, Brug VPN på offentligt  Wi-Fi,
-                     Tjek for "HTTPS".</p></li>
-            <li><h4>Forebyggelse af Identitetstyveri og Svindel</h4>
-                    <p>Spot AI-genereret indhold og deepfakes,Pas på med deling af  oplysninger.</p></li>
+                     Antivirus/Antimalware, Brug Firewall.</p>
+            <li><h4>Online Adfærd og Sikkerhed</h4></li>
+                 <p>Vær kritisk over for links og vedhæftede filer, Brug VPN på offentligt  Wi-Fi,
+                     Tjek for "HTTPS".</p>
+            <li><h4>Forebyggelse af Identitetstyveri og Svindel</h4></li>
+                <p>Spot AI-genereret indhold og deepfakes,Pas på med deling af  oplysninger.</p>
         </ol>
         
       </section>
@@ -273,7 +282,7 @@
                      <button>Back til hjemmmesiden</button>
                  </div>
        </section>
-      
+       </main>
       <!--footer-->
       <footer>
                 <section>
@@ -298,7 +307,7 @@
                 </section>
       </footer>
 
-     </main>
+    
 
 </body>
 </html>

@@ -1,8 +1,215 @@
-body {
-  background-color: #0F3657;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  width: 100px;
+body {
+  background-color: #0F3657;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 120px;
+  font-size: 18px;
+}
+.menu .logo {
+  width: auto;
+  height: 95px;
+  position: absolute;
+  left: 5px;
+  top: 20%;
+}
+.menu .links_navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  position: absolute;
+  right: 25px;
+  top: 30%;
+  border: solid 1px #E86992;
+  padding: 10px 17px;
+  border-radius: 10px;
+}
+.menu .links_navigation ul a {
+  text-decoration: none;
+  color: white;
+  padding-right: 12px;
+}
+.menu .links_navigation ul .intern_navigation {
+  background-color: rgba(0, 0, 128, 0.2);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 3px;
+  margin-top: 30px;
+  border: none;
+  left: 0px;
+}
+.menu .links_navigation ul .intern_navigation li:first-of-type {
+  padding-top: 5px;
+}
+.menu .links_navigation ul .intern_navigation li:last-of-type {
+  padding-bottom: 5px;
+}
+.menu .links_navigation ul .intern_navigation li {
+  padding-top: 3px;
+}
+.menu .links_navigation ul #mom_intern_navigation:hover .intern_navigation {
+  opacity: 100%;
+}
+
+.banner {
+  height: 370px;
+  background: url(../IMG/first_picture.jpg) no-repeat center center/cover;
+}
+.banner h1 {
+  padding-top: 7%;
+  font-family: "orbitron";
+  font-weight: 650;
+  font-style: normal;
+  text-align: center;
+  font-size: 45px;
+  color: #E86992;
+  -webkit-text-stroke: 0.5px white;
+}
+.banner h2 {
+  padding-top: 10px;
+  font-family: "orbitron";
+  font-weight: 480;
+  font-style: normal;
+  text-align: center;
+  font-size: 35px;
+  color: #AFBC88;
+  -webkit-text-stroke: 0.4px white;
+}
+
+.first_sect {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: none;
+  border-bottom: solid 3px #E5D6D6;
+  border-left: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.first_sect .image {
+  width: 140px;
   height: auto;
+  align-self: center;
+}
+.first_sect h3 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 22px;
+  color: #AFBC88;
+}
+.first_sect .txt_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  margin-bottom: 10px;
+}
+
+.second_sect {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: none;
+  border-bottom: solid 3px #E5D6D6;
+  border-left: none;
+}
+.second_sect .txt_section h3 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 22px;
+  color: #AFBC88;
+}
+.second_sect .txt_section p {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.second_sect .tre_boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.second_sect .tre_boxes .single_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  min-height: 180px;
+}
+.second_sect .tre_boxes .single_box h4 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  color: #E86992;
+}
+.second_sect .tre_boxes .single_box button {
+  margin-top: 7px;
+  width: 60%;
+  height: 30px;
+  background-color: #AFBC88;
+  border-radius: 5px;
+}
+.second_sect .tre_boxes .single_box:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* the 3rd,5th section has the samme setting as the first section, therefore it was given the class:first section */
+.fourth_sect .box_inde_sect4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sixth_sect p {
+  align-self: center;
+}
+.sixth_sect h4 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  color: #E86992;
+  margin-bottom: 3px;
+  margin-top: 3px;
 }/*# sourceMappingURL=style.css.map */

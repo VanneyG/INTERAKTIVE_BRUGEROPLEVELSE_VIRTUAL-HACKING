@@ -1,12 +1,66 @@
 $bg_color:#0F3657;
+$txt_color:white;
+$txt_hgt:18px;
 
 
 
+@mixin flex($justify:center,$align:center,$direction:row){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
 
 
 
-
-@mixin img_størrelse($width,$height:auto){
+@mixin img_størrelse($width:auto,$height:auto){
     width:$width;
     height:$height;
+    
+}
+
+@mixin h1_txt($color:#E86992) {
+font-family:"orbitron" ;
+font-weight: 650;
+font-style: normal;
+text-align: center;
+font-size:45px;
+color:$color;
+}
+
+@mixin h2_txt($color:#AFBC88){
+font-family:"orbitron" ;
+font-weight: 480;
+font-style: normal;
+text-align: center;
+font-size:35px;
+color:$color;
+}
+
+@mixin h3_txt($color:#AFBC88){
+font-family:"orbitron" ;
+font-weight: 180;
+font-style: normal;
+text-align: center;
+font-size:22px;
+color:$color;
+}
+
+@mixin h4_txt($color:#E86992){
+font-family:"orbitron" ;
+font-weight: 180;
+font-style: normal;
+text-align: center;
+font-size:16px;
+color:$color;
+}
+
+@mixin sect_margin($top:15px,$bottom:15px,$border:solid){
+    margin-top: $top;
+    margin-bottom: $bottom;
+    border-top:none;
+    border-bottom: $border 3px #E5D6D6;
+    border-left: none;
+   
 }
