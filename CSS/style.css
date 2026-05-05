@@ -315,8 +315,8 @@ main .forgrenet_sect .options {
   flex-wrap: wrap;
 }
 main .forgrenet_sect .options .avatar_billede {
-  width: 250px;
   height: auto;
+  width: 300px;
   flex-basis: 25%;
   margin-bottom: 15px;
 }
@@ -330,10 +330,137 @@ main .forgrenet_sect .options .buttons {
 main .forgrenet_sect .options .buttons .single_btn {
   border-radius: 10px;
   padding: 10px;
-  margin: 10px;
+  margin: 15px;
   flex-grow: 1;
-  padding: 5px;
+  padding: 15px;
 }
 main .forgrenet_sect .options .buttons {
   flex-basis: 75%;
+}
+main .resulteter_sect {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .resulteter_sect .avatar_billede {
+  height: auto;
+  width: 300px;
+  flex-basis: 25%;
+  margin-bottom: 15px;
+  flex-basis: 25%;
+}
+main .resulteter_sect .txt_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  margin: 10px;
+}
+main .resulteter_sect .txt_section button {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #AFBC88;
+  font-weight: 900;
+  line-height: 29px;
+}
+main .resulteter_sect .txt_section h3 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 22px;
+  color: #E86992;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .social_media {
+  margin-bottom: 30px;
+}
+footer .social_media h3 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: left;
+  font-size: 22px;
+  color: #AFBC88;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+footer .social_media .logo {
+  width: auto;
+  height: 120px;
+}
+footer .social_media .ikon_sect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .social_media .ikon_sect .ikon {
+  width: auto;
+  height: 50px;
+  padding-right: 10px;
+}
+footer .social_media .ikon_sect {
+  /*  .media_ikons_sect{
+       @include partial.flex($justify:center,$align:flex-end,$direction:row);  
+    } */
+}
+footer .social_media .e-mail_sect {
+  margin-bottom: 15px;
+}
+footer .social_media .e-mail_sect .ikon {
+  height: 35px;
+}
+footer .nyhedsbrev {
+  border: dotted 1px grey;
+  height: 100%;
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer .nyhedsbrev h4 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  color: #AFBC88;
+  padding-bottom: 5px;
+}
+footer .nyhedsbrev p {
+  margin-bottom: 10px;
+}
+footer .nyhedsbrev input[type=text] {
+  margin-bottom: 10px;
+  width: 60%;
+  line-height: 24px;
+  border-radius: 5px;
+}
+footer .nyhedsbrev button {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #E86992;
+  font-weight: 900;
+  line-height: 29px;
 }/*# sourceMappingURL=style.css.map */

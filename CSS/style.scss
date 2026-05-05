@@ -37,7 +37,7 @@ body{
         border: solid 1px #E86992 ;
         padding: 10px 17px;
         border-radius: 10px;
-        
+       
         
        a{
         text-decoration: none;
@@ -222,14 +222,17 @@ z-index: 1;
 }
 .forgrenet_sect{
     width: partial.$width;
+   
     background-color:#636161 ;
 margin-top:650px;
     .explanation{
         text-align: center;
         padding: 15px;
+       
         h3{
             @include partial.h3_txt;
             -webkit-text-stroke: .4px rgb(231, 221, 221);
+           
         }
         h4{
             @include partial.h4_txt;
@@ -241,23 +244,107 @@ margin-top:650px;
         
       @include partial.flex($align:center,$justify:space-evenly) ;  
     .avatar_billede {
-          @include partial.img_størrelse($height:auto,$width:250px);
-          flex-basis: 25%;
-          margin-bottom: 15px;
+          @include partial.avatar_billede;
+          
     }
     .buttons{
+        
         @include partial.flex($align:center,$justify:flex-start) ;  
        .single_btn{
         border-radius: 10px;
         padding: 10px;
-        margin:10px;
+        margin:15px;
         flex-grow: 1;
-        padding: 5px;
+        padding: 15px;
         
        }
        flex-basis: 75%;
     }
     }
 }
+.resulteter_sect{
+     
+   @include partial.flex($align:center, $justify:space-evenly) ;  
+  .avatar_billede {
+          @include partial.avatar_billede;
+           flex-basis: 25%;
+    }
+  
+     .txt_section{
 
+       @include partial.flex($justify:space-evenly,$align:center,$direction:column);
+       flex-basis: 70%;
+       margin: 10px;
+       button{
+       @include partial.button;
+       }
+       h3{
+        @include partial.h3_txt($color:#E86992);
+       }
+       
+    }
+}
+
+}
+footer{
+     @include partial.flex($justify:space-around,$align:center,$direction:row);
+
+     .social_media{
+        margin-bottom: 30px;
+      
+        h3{
+            @include partial.h3_txt($txt_align:left);
+              padding-left: 20px;
+              margin-bottom: 20px;
+        }
+        .logo{
+           @include partial.img_størrelse($height:120px);  
+         
+        }
+      
+        .ikon_sect{
+           @include partial.flex($justify:space-between,$align:center,$direction:row);  
+           .ikon{
+             @include partial.img_størrelse($height:50px);  
+             padding-right: 10px;
+             
+           }
+          
+         /*  .media_ikons_sect{
+              @include partial.flex($justify:center,$align:flex-end,$direction:row);  
+           } */
+        }
+          .e-mail_sect{
+            margin-bottom: 15px;
+            .ikon{
+                height:35px;
+            }
+        }
+     }
+
+     .nyhedsbrev{
+        border: dotted 1px grey;
+       
+        height:100%;
+        padding:20px 20px 40px 20px;
+         @include partial.flex($justify:center,$align:center,$direction:column);  
+         h4 {
+            @include partial.h4_txt($color:#AFBC88);
+            padding-bottom: 5px;
+         }
+
+p{ margin-bottom: 10px;}
+         
+         input[type="text"] {
+                margin-bottom: 10px;
+                width:60%;
+                 line-height: 24px;
+                 border-radius: 5px;
+
+}
+button{
+    
+   @include partial.button($color:#E86992);
+}
+     }
 }

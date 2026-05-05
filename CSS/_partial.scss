@@ -4,6 +4,7 @@ $txt_hgt:18px;
 $width:100%;
 
 
+
 @mixin flex($justify:space-evenly,$align:stretch,$direction:row){
     display: flex;
     justify-content: $justify;
@@ -40,7 +41,7 @@ font-size:45px;
 color:$color;
 }
 
-@mixin h2_txt($color:#AFBC88){
+@mixin h2_txt($color:#AFBC88) {
 font-family:"orbitron" ;
 font-weight: 480;
 font-style: normal;
@@ -49,13 +50,15 @@ font-size:35px;
 color:$color;
 }
 
-@mixin h3_txt($color:#AFBC88){
+@mixin h3_txt($color:#AFBC88,$txt_align:center){
 font-family:"orbitron" ;
 font-weight: 180;
 font-style: normal;
-text-align: center;
+text-align: $txt_align;
 font-size:22px;
 color:$color;
+
+
 }
 
 @mixin h4_txt($color:#E86992){
@@ -74,4 +77,21 @@ color:$color;
     border-bottom: $border 3px #E5D6D6;
     border-left: none;
    
+}
+
+@mixin avatar_billede ($height:auto,$width:300px){
+           height:$height;
+           width: $width;
+          flex-basis: 25%;
+          margin-bottom: 15px;
+}
+@mixin button($color:#AFBC88){
+      width:50%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background-color: $color;
+        font-weight: 900;
+         line-height: 29px;
 }
