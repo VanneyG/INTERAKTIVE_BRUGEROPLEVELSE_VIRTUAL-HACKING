@@ -1,15 +1,26 @@
 $bg_color:#0F3657;
 $txt_color:white;
 $txt_hgt:18px;
+$width:100%;
 
 
-
-@mixin flex($justify:center,$align:center,$direction:row){
+@mixin flex($justify:space-evenly,$align:stretch,$direction:row){
     display: flex;
     justify-content: $justify;
     align-items: $align;
     flex-direction: $direction;
     flex-wrap: wrap;
+}
+
+@mixin grid($justify:center,$align:start /*,$align_content:center*/,$direction:row,){
+    display: grid;
+    justify-content: $justify;
+    align-items: $align;
+   /* align-content: $align_content; */
+    grid-auto-flow: $direction;
+    grid-template: minmax(50px,350px) minmax(50px,450px) minmax(50px,250px)/minmax(50px,250px) minmax(100px,450px)  minmax(50px,350px);
+    gap:0 2px;
+    
 }
 
 

@@ -13,13 +13,14 @@ body {
 
 .menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: stretch;
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
   min-height: 120px;
   font-size: 18px;
+  width: 100%;
 }
 .menu .logo {
   width: auto;
@@ -51,7 +52,7 @@ body {
   background-color: rgba(0, 0, 128, 0.2);
   opacity: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
@@ -74,6 +75,7 @@ body {
 }
 
 .banner {
+  width: 100%;
   height: 370px;
   background: url(../IMG/first_picture.jpg) no-repeat center center/cover;
 }
@@ -98,7 +100,10 @@ body {
   -webkit-text-stroke: 0.4px white;
 }
 
-.first_sect {
+main {
+  width: 100%;
+}
+main .first_sect {
   margin-top: 15px;
   margin-bottom: 15px;
   border-top: none;
@@ -110,12 +115,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.first_sect .image {
+main .first_sect .image {
   width: 140px;
   height: auto;
   align-self: center;
 }
-.first_sect h3 {
+main .first_sect h3 {
   font-family: "orbitron";
   font-weight: 180;
   font-style: normal;
@@ -123,7 +128,7 @@ body {
   font-size: 22px;
   color: #AFBC88;
 }
-.first_sect .txt_section {
+main .first_sect .txt_section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -132,15 +137,14 @@ body {
   flex-basis: 70%;
   margin-bottom: 10px;
 }
-
-.second_sect {
+main .second_sect {
   margin-top: 15px;
   margin-bottom: 15px;
   border-top: none;
   border-bottom: solid 3px #E5D6D6;
   border-left: none;
 }
-.second_sect .txt_section h3 {
+main .second_sect .txt_section h3 {
   font-family: "orbitron";
   font-weight: 180;
   font-style: normal;
@@ -148,18 +152,19 @@ body {
   font-size: 22px;
   color: #AFBC88;
 }
-.second_sect .txt_section p {
+main .second_sect .txt_section p {
   padding-right: 10%;
   padding-left: 10%;
 }
-.second_sect .tre_boxes {
+main .second_sect .tre_boxes {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 9px;
 }
-.second_sect .tre_boxes .single_box {
+main .second_sect .tre_boxes .single_box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,8 +176,11 @@ body {
   margin: 5px;
   padding: 10px;
   min-height: 180px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 10px;
 }
-.second_sect .tre_boxes .single_box h4 {
+main .second_sect .tre_boxes .single_box h4 {
   font-family: "orbitron";
   font-weight: 180;
   font-style: normal;
@@ -180,30 +188,30 @@ body {
   font-size: 16px;
   color: #E86992;
 }
-.second_sect .tre_boxes .single_box button {
+main .second_sect .tre_boxes .single_box button {
   margin-top: 7px;
   width: 60%;
   height: 30px;
   background-color: #AFBC88;
   border-radius: 5px;
 }
-.second_sect .tre_boxes .single_box:last-of-type {
+main .second_sect .tre_boxes .single_box:last-of-type {
   margin-bottom: 10px;
 }
-
-/* the 3rd,5th section has the samme setting as the first section, therefore it was given the class:first section */
-.fourth_sect .box_inde_sect4 {
+main {
+  /* the 3rd,5th section has the samme setting as the first section, therefore it was given the class:first section */
+}
+main .fourth_sect .box_inde_sect4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-.sixth_sect p {
+main .sixth_sect p {
   align-self: center;
 }
-.sixth_sect h4 {
+main .sixth_sect h4 {
   font-family: "orbitron";
   font-weight: 180;
   font-style: normal;
@@ -212,4 +220,120 @@ body {
   color: #E86992;
   margin-bottom: 3px;
   margin-top: 3px;
+}
+main .seventh_sect {
+  margin: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  /* align-content: $align_content; */
+  grid-auto-flow: row;
+  grid-template: minmax(50px, 350px) minmax(50px, 450px) minmax(50px, 250px)/minmax(50px, 250px) minmax(100px, 450px) minmax(50px, 350px);
+  gap: 0 2px;
+  max-height: 400px;
+}
+main .seventh_sect .image_grid {
+  width: 100px;
+  height: 120px;
+}
+main .seventh_sect .child_1 {
+  grid-area: 1/1/2/2;
+  justify-self: stretch;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+main .seventh_sect .child_2 {
+  grid-area: 3/1/4/2;
+  justify-self: stretch;
+  margin-top: -150px;
+  margin-left: 10px;
+}
+main .seventh_sect .child_3 {
+  grid-area: 2/2/3/3;
+}
+main .seventh_sect .child_3 .image_grid {
+  width: 250px;
+  height: 170px;
+}
+main .seventh_sect .child_3 {
+  z-index: 1;
+  justify-self: center;
+}
+main .seventh_sect .child_3 h3 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 22px;
+  color: #E86992;
+}
+main .seventh_sect .child_4 {
+  grid-area: 1/3/2/4;
+  justify-self: stretch;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+main .seventh_sect .child_5 {
+  grid-area: 3/3/4/4;
+  justify-self: stretch;
+  margin-top: -150px;
+  margin-right: 10px;
+}
+main .forgrenet_sect {
+  width: 100%;
+  background-color: #636161;
+  margin-top: 650px;
+}
+main .forgrenet_sect .explanation {
+  text-align: center;
+  padding: 15px;
+}
+main .forgrenet_sect .explanation h3 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 22px;
+  color: #AFBC88;
+  -webkit-text-stroke: 0.4px rgb(231, 221, 221);
+}
+main .forgrenet_sect .explanation h4 {
+  font-family: "orbitron";
+  font-weight: 180;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  color: #E86992;
+  -webkit-text-stroke: 0.2px rgb(231, 221, 221);
+  padding-top: 15px;
+}
+main .forgrenet_sect .options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .forgrenet_sect .options .avatar_billede {
+  width: 250px;
+  height: auto;
+  flex-basis: 25%;
+  margin-bottom: 15px;
+}
+main .forgrenet_sect .options .buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .forgrenet_sect .options .buttons .single_btn {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  flex-grow: 1;
+  padding: 5px;
+}
+main .forgrenet_sect .options .buttons {
+  flex-basis: 75%;
 }/*# sourceMappingURL=style.css.map */
