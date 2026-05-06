@@ -392,6 +392,34 @@ main .resulteter_sect .txt_section h3 {
   font-size: 22px;
   color: #E86992;
 }
+main {
+  /* new*/
+}
+main .stage {
+  display: none;
+  /*margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem; */
+}
+main .stage.active {
+  display: block;
+}
+main {
+  /*
+  .stage .btn {
+    background-color: #6623b8;
+    border: none;
+    border-radius: 1rem;
+    color: #cff6ea;
+    padding: 0.5rem;
+  } */
+}
+main .stage .btn:hover {
+  background-color: #fa3292;
+}
+main {
+  /*---------------------------*/
+}
 
 footer {
   display: flex;
@@ -413,9 +441,9 @@ footer .social_media h3 {
   padding-left: 20px;
   margin-bottom: 20px;
 }
-footer .social_media .logo {
+footer .social_media .logo_footer {
   width: auto;
-  height: 120px;
+  height: 100px;
 }
 footer .social_media .ikon_sect {
   display: flex;
