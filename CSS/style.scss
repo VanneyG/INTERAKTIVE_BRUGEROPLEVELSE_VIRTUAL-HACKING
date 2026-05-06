@@ -300,7 +300,8 @@ margin-top:650px;
 /* new*/
 
 .stage {
- 
+    background-color: #636161;
+ margin-top: 700px;
   display: none;
   /*margin: 0 auto;
   max-width: 800px;
@@ -308,16 +309,9 @@ margin-top:650px;
 }
 .stage.active {
   display: block;
-}/*
-.stage .btn {
-  background-color: #6623b8;
-  border: none;
-  border-radius: 1rem;
-  color: #cff6ea;
-  padding: 0.5rem;
-} */
-.stage .btn:hover {
-  background-color: #fa3292;}
+}
+
+
 
 /*---------------------------*/
 

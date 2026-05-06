@@ -396,6 +396,8 @@ main {
   /* new*/
 }
 main .stage {
+  background-color: #636161;
+  margin-top: 700px;
   display: none;
   /*margin: 0 auto;
   max-width: 800px;
@@ -403,19 +405,6 @@ main .stage {
 }
 main .stage.active {
   display: block;
-}
-main {
-  /*
-  .stage .btn {
-    background-color: #6623b8;
-    border: none;
-    border-radius: 1rem;
-    color: #cff6ea;
-    padding: 0.5rem;
-  } */
-}
-main .stage .btn:hover {
-  background-color: #fa3292;
 }
 main {
   /*---------------------------*/
