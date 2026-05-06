@@ -364,9 +364,17 @@ button{
 
 /*media queries */
 /*tablet og mobil */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) { /* fra 767 op */
 
-    .menu_navigation{
-        display:none;
+    .menu {
+        button{
+            opacity:0;
+        }
+       ul:first-of-type{
+        opacity: 100%;
+       }
+       ul:last-of-type{
+        opacity: 100%;
+       }
     }
 }

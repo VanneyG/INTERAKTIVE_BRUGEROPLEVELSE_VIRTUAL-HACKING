@@ -481,8 +481,14 @@ footer .nyhedsbrev button {
 
 /*media queries */
 /*tablet og mobil */
-@media screen and (min-width: 767px) {
-  .menu_navigation {
-    display: none;
+@media screen and (min-width: 767px) { /* fra 767 op */
+  .menu button {
+    opacity: 0;
+  }
+  .menu ul:first-of-type {
+    opacity: 100%;
+  }
+  .menu ul:last-of-type {
+    opacity: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
