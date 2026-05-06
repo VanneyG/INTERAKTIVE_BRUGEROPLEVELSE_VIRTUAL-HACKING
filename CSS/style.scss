@@ -8,12 +8,7 @@ body{
     color:partial.$txt_color;
  min-height: 100vh;
     width:partial.$width;
- 
-
-
 }
-
-
 
  .menu{
     @include partial.flex;
@@ -28,7 +23,17 @@ body{
     top:20%;
 }
 
+button{
+     position: absolute;
+        right:20px;
+        top:40%; 
+       height: 40px;
+        width:40px;
+}
+
     .links_navigation ul {
+
+       opacity: 0; /* det gør, at linker forsvinder */
         @include partial.flex($align:flex-start,$justify:flex-end) ;                                                                                             
         list-style-type: none;
         position: absolute;
@@ -37,8 +42,8 @@ body{
         border: solid 1px #E86992 ;
         padding: 10px 17px;
         border-radius: 10px;
-       
         
+    
        a{
         text-decoration: none;
         color:partial.$txt_color;
@@ -71,9 +76,11 @@ body{
             opacity: 100%;
 
         }
+       
      }
+   
     }
- }
+ }   /* menu ends */
  .banner{
     width:partial.$width;
     height: 370px;
@@ -93,6 +100,8 @@ body{
 
  }
 
+
+/*---------------------------*/
  main{
     width:partial.$width;
  .first_sect{
@@ -128,7 +137,9 @@ padding-left: 10%;}
   }
  .tre_boxes{
      @include partial.flex($justify:space-around,$align:center,$direction:row);
-      margin: 9px;
+      margin-top:9px;
+      margin-right: 15px;
+      margin-left: 10px;
      .single_box{
          @include partial.flex($justify:center,$align:center,$direction:column);
          background-color: white;
@@ -138,8 +149,9 @@ padding-left: 10%;}
          padding:10px;
          min-height: 180px;
          flex-grow: 1;
-         flex-shrink: 1;
+         flex-shrink: 2;
        margin: 10px;
+       flex-basis: 250px;
 
          h4{
             @include partial.h4_txt;
@@ -347,4 +359,14 @@ button{
    @include partial.button($color:#E86992);
 }
      }
+}
+
+
+/*media queries */
+/*tablet og mobil */
+@media screen and (min-width: 767px) {
+
+    .menu_navigation{
+        display:none;
+    }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,15 @@ body {
   left: 5px;
   top: 20%;
 }
+.menu button {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  height: 40px;
+  width: 40px;
+}
 .menu .links_navigation ul {
+  opacity: 0; /* det gør, at linker forsvinder */
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -74,6 +83,7 @@ body {
   opacity: 100%;
 }
 
+/* menu ends */
 .banner {
   width: 100%;
   height: 370px;
@@ -100,6 +110,7 @@ body {
   -webkit-text-stroke: 0.4px white;
 }
 
+/*---------------------------*/
 main {
   width: 100%;
 }
@@ -162,7 +173,9 @@ main .second_sect .tre_boxes {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 9px;
+  margin-top: 9px;
+  margin-right: 15px;
+  margin-left: 10px;
 }
 main .second_sect .tre_boxes .single_box {
   display: flex;
@@ -177,8 +190,9 @@ main .second_sect .tre_boxes .single_box {
   padding: 10px;
   min-height: 180px;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 2;
   margin: 10px;
+  flex-basis: 250px;
 }
 main .second_sect .tre_boxes .single_box h4 {
   font-family: "orbitron";
@@ -463,4 +477,12 @@ footer .nyhedsbrev button {
   background-color: #E86992;
   font-weight: 900;
   line-height: 29px;
+}
+
+/*media queries */
+/*tablet og mobil */
+@media screen and (min-width: 767px) {
+  .menu_navigation {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
