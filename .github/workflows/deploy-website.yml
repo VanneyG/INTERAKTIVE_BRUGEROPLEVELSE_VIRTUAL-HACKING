@@ -22,7 +22,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: linux208.unoeuro.com
-          server-dir: public_html/interaktiv_brugeroplevelse/
+          server-dir: public_html/virtual-hacking/
           username: vanessa-nf.dk
           password: ${{ secrets.ftp_password }}
           dry-run: ${{ inputs.trig-dry-run }}
