@@ -81,6 +81,15 @@ ul {
         text-decoration: none;
         color:partial.$txt_color;
         padding-right: 12px;
+
+        &:hover{
+            color:#AFBC88;
+            
+        }
+         &:active{
+            text-decoration: underline;
+            
+        }
     
     }  
      
@@ -101,6 +110,7 @@ ul {
        }
         li{
           padding-top: 3px;
+         
         }
 
      }
@@ -282,7 +292,9 @@ z-index: 1;
    
     background-color:#636161 ;
 margin-top:650px;
+ 
     .explanation{
+        
         text-align: center;
         padding: 15px;
        
@@ -298,7 +310,7 @@ margin-top:650px;
         }
     }
     .options{
-        
+        padding-bottom: 20px;
       @include partial.flex($align:center,$justify:space-evenly) ;  
     .avatar_billede {
           @include partial.avatar_billede;
@@ -350,13 +362,17 @@ margin-top:650px;
 /* new*/
 
 .stage {
+ 
+  
     background-color: #636161;
  margin-top: 700px;
   display: none;
-  width: 100%;
+ 
 }
 .stage.active {
   display: block;
+  
+
 }
 
  }
@@ -366,6 +382,8 @@ margin-top:650px;
 
 
 footer{
+   margin-top: 20px;
+    padding-top: 20px;
         @include partial.flex($justify:space-around,$align:center,$direction:row);
 
      .social_media{
@@ -431,7 +449,7 @@ button{
 
 /*media queries */
 /*tablet og mobil */
-@media screen and (min-width: 767px)
+@media screen and (min-width: 767px) 
  { /* fra 767 op */
 
     .menu {
@@ -442,5 +460,19 @@ button{
         opacity: 1;
        }
       
+    }
+
+    /* grid billeder */
+
+    main{
+        .seventh_sect .image_grid{
+          @include partial.img_størrelse($height:190px,$width:280px);
+        }
+         p{
+            font-size: 18px;
+         }
+        .stage{
+            font-size: 20px;
+        }
     }
 }
