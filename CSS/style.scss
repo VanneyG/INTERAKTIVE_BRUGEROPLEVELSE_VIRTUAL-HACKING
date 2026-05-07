@@ -23,15 +23,40 @@ body{
     top:20%;
 }
 
-button{
+
+
+ .links_navigation{
+
+   .burger_menu_sect{
+    opacity:1;
+    position: relative;
+    .navig_burger{
+        background-color: rgb(3, 3, 41,.6);
+        min-width:150px ;
+        position: absolute;
+        top:95px;
+        left:0px;
+        
+    .list_burger_menu{
+        list-style-type: none;
+        a{
+        color: white;
+          text-decoration: none;}
+          }
+    }
+   }
+
+
+
+    button{
      position: absolute;
-        right:20px;
+        right:40px;
         top:40%; 
        height: 40px;
         width:40px;
 }
 
-    .links_navigation ul {
+ul {
 
        opacity: 0; /* det gør, at linker forsvinder */
         @include partial.flex($align:flex-start,$justify:flex-end) ;                                                                                             
@@ -53,7 +78,7 @@ button{
      
      .intern_navigation{
         background-color:rgb(0, 0, 128,.2);
-        opacity: 0;
+        opacity:0;
         @include partial.flex($direction:column,$align:flex-start);
         padding-top:3px;
         margin-top: 30px;
@@ -73,13 +98,21 @@ button{
      }
      #mom_intern_navigation:hover{
         .intern_navigation{
-            opacity: 100%;
+            opacity: 1;
 
         }
        
      }
    
     }
+
+
+
+
+
+ }
+
+   
  }   /* menu ends */
  .banner{
     width:partial.$width;
@@ -87,7 +120,7 @@ button{
     background:url(../IMG/first_picture.jpg) no-repeat center center/cover;
 
     h1{
-        padding-top: 7%;
+        padding-top: 30%;
         @include partial.h1_txt;
          -webkit-text-stroke: .5px white;
     }
@@ -390,11 +423,9 @@ button{
             opacity:0;
         }
        ul:first-of-type{
-        opacity: 100%;
+        opacity: 1;
        }
-       ul:last-of-type{
-        opacity: 100%;
-       }
+      
     }
 }
  

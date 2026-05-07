@@ -30,9 +30,27 @@ body {
   left: 5px;
   top: 20%;
 }
-.menu button {
+.menu .links_navigation .burger_menu_sect {
+  opacity: 1;
+  position: relative;
+}
+.menu .links_navigation .burger_menu_sect .navig_burger {
+  background-color: rgba(3, 3, 41, 0.6);
+  min-width: 150px;
   position: absolute;
-  right: 20px;
+  top: 95px;
+  left: 0px;
+}
+.menu .links_navigation .burger_menu_sect .navig_burger .list_burger_menu {
+  list-style-type: none;
+}
+.menu .links_navigation .burger_menu_sect .navig_burger .list_burger_menu a {
+  color: white;
+  text-decoration: none;
+}
+.menu .links_navigation button {
+  position: absolute;
+  right: 40px;
   top: 40%;
   height: 40px;
   width: 40px;
@@ -80,7 +98,7 @@ body {
   padding-top: 3px;
 }
 .menu .links_navigation ul #mom_intern_navigation:hover .intern_navigation {
-  opacity: 100%;
+  opacity: 1;
 }
 
 /* menu ends */
@@ -90,7 +108,7 @@ body {
   background: url(../IMG/first_picture.jpg) no-repeat center center/cover;
 }
 .banner h1 {
-  padding-top: 7%;
+  padding-top: 30%;
   font-family: "orbitron";
   font-weight: 650;
   font-style: normal;
@@ -503,9 +521,6 @@ footer .nyhedsbrev button {
     opacity: 0;
   }
   .menu ul:first-of-type {
-    opacity: 100%;
-  }
-  .menu ul:last-of-type {
-    opacity: 100%;
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
