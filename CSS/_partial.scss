@@ -70,7 +70,7 @@ font-size:16px;
 color:$color;
 }
 
-@mixin sect_margin($top:15px,$bottom:15px,$border:solid){
+@mixin sect_margin($top:15px,$bottom:35px,$border:solid){
     margin-top: $top;
     margin-bottom: $bottom;
     border-top:none;
