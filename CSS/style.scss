@@ -28,14 +28,18 @@ body{
  .links_navigation{
 
    .burger_menu_sect{
-    opacity:1;
+    
     position: relative;
-    .navig_burger{
+   .navig_burger{
+         transition: opacity 0.3s ease, visibility 0.3s ease;
+        opacity:0;
+        visibility: hidden;
         background-color: rgb(3, 3, 41,.6);
         min-width:150px ;
         position: absolute;
         top:95px;
         left:0px;
+        z-index: 100;
         
     .list_burger_menu{
         list-style-type: none;
@@ -44,7 +48,9 @@ body{
           text-decoration: none;}
           }
     }
-   }
+   } 
+
+   
 
 
 
@@ -57,6 +63,8 @@ body{
 }
 
 ul {
+
+   
 
        opacity: 0; /* det gør, at linker forsvinder */
         @include partial.flex($align:flex-start,$justify:flex-end) ;                                                                                             
@@ -96,6 +104,8 @@ ul {
         }
 
      }
+
+   
      #mom_intern_navigation:hover{
         .intern_navigation{
             opacity: 1;
@@ -107,26 +117,28 @@ ul {
     }
 
 
-
+   
 
 
  }
 
    
  }   /* menu ends */
+
  .banner{
+    @include partial.flex($justify:center,$align:center,$direction:column);
     width:partial.$width;
-    height: 370px;
+    height: 430px;
     background:url(../IMG/first_picture.jpg) no-repeat center center/cover;
 
     h1{
-        padding-top: 30%;
+       
         @include partial.h1_txt;
          -webkit-text-stroke: .5px white;
     }
 
     h2{
-        padding-top: 10px;
+      
         @include partial.h2_txt; 
         -webkit-text-stroke: .4px white;
     }
@@ -308,15 +320,20 @@ margin-top:650px;
     }
 }
 .resulteter_sect{
-     
-   @include partial.flex($align:center, $justify:space-evenly) ;  
+    
+      @include partial.flex($justify:space-evenly,$align:center);
+  
   .avatar_billede {
           @include partial.avatar_billede;
-           flex-basis: 25%;
+          overflow: hidden;
+          padding-left:20%;
+           /*------------------*/
+           flex-basis: 20%;
     }
   
      .txt_section{
 
+  flex-shrink: 1;
        @include partial.flex($justify:space-evenly,$align:center,$direction:column);
        flex-basis: 70%;
        margin: 10px;
@@ -336,22 +353,20 @@ margin-top:650px;
     background-color: #636161;
  margin-top: 700px;
   display: none;
-  /*margin: 0 auto;
-  max-width: 800px;
-  padding: 1rem; */
+  width: 100%;
 }
 .stage.active {
   display: block;
 }
 
-
+ }
 
 /*---------------------------*/
 
-}
+
 
 footer{
-     @include partial.flex($justify:space-around,$align:center,$direction:row);
+        @include partial.flex($justify:space-around,$align:center,$direction:row);
 
      .social_media{
         margin-bottom: 30px;
@@ -416,7 +431,8 @@ button{
 
 /*media queries */
 /*tablet og mobil */
-@media screen and (min-width: 767px) { /* fra 767 op */
+@media screen and (min-width: 767px)
+ { /* fra 767 op */
 
     .menu {
         button{
@@ -428,4 +444,3 @@ button{
       
     }
 }
- 

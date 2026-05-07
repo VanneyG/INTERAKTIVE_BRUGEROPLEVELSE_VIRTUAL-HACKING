@@ -82,7 +82,6 @@ color:$color;
 @mixin avatar_billede ($height:auto,$width:300px){
            height:$height;
            width: $width;
-          flex-basis: 25%;
           margin-bottom: 15px;
 }
 @mixin button($color:#AFBC88){
